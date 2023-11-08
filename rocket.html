@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Rocket Prediction Game</title>
-    <link rel="stylesheet" href="rocket.css">
+  <meta charset="UTF-8">
+  <title>Rocket Prediction Game</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="top-bar">
-            <div class="wallet">
-                <img src="wallet-icon.png" alt="Wallet Logo">
-            </div>
-            <div class="rocket-prediction">
-                Rocket Prediction
-            </div>
-        </div>
-        <div class="game-history"></div>
-        <div class="amount-control">
-            <button id="decrease-amount">-</button>
-            <p>Amount: <span id="current-amount">100</span></p>
-            <button id="increase-amount">+</button>
-        </div>
-        <button id="start-button">Start</button>
+  <div class="container">
+    <div class="top-bar">
+      <div class="wallet">
+        <img src="wallet-icon.png" alt="Wallet Logo">
+      </div>
+      <div class="rocket-prediction">
+        Rocket Prediction
+      </div>
     </div>
-    <div class="rocket-container">
-        <div id="rocket" class="rocket">🚀</div>
+    <div class="game-history"></div>
+    <div class="amount-control">
+      <button class="amount" id="decrease-amount">
+        <span>-</span>
+      </button>
+      <p>Amount: <span id="current-amount">50</span></p>
+      <button class="amount" id="increase-amount">
+        <span>+</span>
+      </button>
     </div>
-    <div class="earned-amount">
-        Earned Amount: <span id="earned-amount">0</span>
-    </div>
-    <script src="rocket.js"></script>
+    <button id="start-button">Start</button>
+  </div>
+  <div class="rocket-container">
+    <div id="rocket" class="rocket">🚀</div>
+  </div>
+  <div class="earned-amount">
+    Earned Amount: <span id="earned-amount">0</span>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
