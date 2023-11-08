@@ -55,7 +55,7 @@
                session_start();
                $_SESSION['loggedin']=TRUE;
                $_SESSION['username']=$username;
-               header("location: /full project php/index.php");
+               header("location: /gaming_project/GAMING_ROCKETS/rocket.html");
             }
             else{
                echo '<div class="alert alert-danger" role="alert">
